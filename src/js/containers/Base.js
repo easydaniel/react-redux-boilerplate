@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as BaseActions from '../actions/BaseAction';
+import * as BaseActions from '../actions/base';
 
 class Master extends Component {
   constructor(props) {

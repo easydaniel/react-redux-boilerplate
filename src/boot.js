@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './js/stores/configureStore';
-import RootRouter from './js/routes.jsx';
+import RootRouter from './js/routes';
 
 
 const store = configureStore();
