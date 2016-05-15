@@ -1,6 +1,5 @@
 var Path = require('path');
 var webpack = require('webpack');
-var WebpackNotifierPlugin = require('webpack-notifier');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var config = require('./config.js');
 
@@ -54,7 +53,6 @@ module.exports = {
         }),
         new webpack.NoErrorsPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new WebpackNotifierPlugin(),
         new HtmlWebpackPlugin({
           template: 'src/index.ejs',
           inject: 'body'
