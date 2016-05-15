@@ -11,7 +11,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry:{
         bundle :[
-          Path.resolve(__dirname, 'src/boot.js')
+          Path.resolve(__dirname, 'src/index.js')
         ]
     },
     output: {
