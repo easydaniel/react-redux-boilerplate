@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Router, Route, Link, browserHistory } from 'react-router'
 
 import * as BaseActions from '../actions/base';
 
@@ -13,6 +14,7 @@ class Master extends Component {
     return (
       <div>
         Hello World
+        <Link to={`/test`}>not found</Link>
       </div>
     );
   }

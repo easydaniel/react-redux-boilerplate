@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import styles from './Base.styl';
 
-export default class Base extends Component {
+export default class NotFound extends Component {
 
   constructor(props) {
     super(props);
+    console.log(this.props);
   }
 
   render() {
     return (
-        <div>
-          Base
-        </div>
+      <div>
+        NotFound
+      </div>
     );
   }
 }

@@ -5,6 +5,9 @@ var config = require('./config.js');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
+    devServer: {
+      historyApiFallback: true
+    },
     entry: [
         'webpack-hot-middleware/client',
         './src/index.js'
