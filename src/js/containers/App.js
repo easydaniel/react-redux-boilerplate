@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import DevTools from './DevTools';
-import '../../index.styl';
 
 export default class App extends Component {
 
