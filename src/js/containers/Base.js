@@ -12,9 +12,10 @@ class Master extends Component {
   }
 
   render() {
+    console.log(this);
     return (
       <div>
-        Hello World
+        Hello something elsesdfsdfasdfasdfasd ~~
         <Link to={`/test`}>not found</Link>
       </div>
     );

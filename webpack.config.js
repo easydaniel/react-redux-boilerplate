@@ -9,7 +9,7 @@ module.exports = {
       historyApiFallback: true
     },
     entry: [
-        'webpack-hot-middleware/client',
+        'webpack-hot-middleware/client?reload=true',
         './src/index.js'
     ],
     output: {
