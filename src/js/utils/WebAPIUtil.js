@@ -1,8 +1,8 @@
-var request = require('request-promise');
+import rp from 'request-promise';
 
 const WebAPIUtil = {
 
-  GET: () => request({
+  GET: () => rp({
     uri: 'GET-URI',
     qs: {
       param: 'value' // -> uri + '?param=value'
@@ -19,7 +19,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  POST: () => request({
+  POST: () => rp({
     method: 'POST',
     uri: "POST-URI",
     body: {
@@ -34,7 +34,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  FORM: () => request({
+  FORM: () => rp({
     method: 'POST',
     uri: 'POST-URI',
     form: {
@@ -51,7 +51,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  FULLRESPONSE: () => request({
+  FULLRESPONSE: () => rp({
     method: 'PUT',
     uri: 'URI',
     resolveWithFullResponse: true
