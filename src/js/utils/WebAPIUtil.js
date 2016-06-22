@@ -17,7 +17,7 @@ const WebAPIUtil = {
   })
   .catch((err) => {
     // POST failed...
-  });
+  }),
 
   POST: () => request({
     method: 'POST',
@@ -32,7 +32,36 @@ const WebAPIUtil = {
   })
   .catch((err) => {
     // POST failed...
+  }),
+
+  FORM: () => request({
+    method: 'POST',
+    uri: 'POST-URI',
+    form: {
+      some: 'payload' // Will be urlencoded
+    },
+    headers: {
+      /* 'content-type': 'application/x-www-form-urlencoded' */ // Set automatically
+    }
   })
+  .then(function (body) {
+    // POST succeeded...
+  })
+  .catch(function (err) {
+    // POST failed...
+  }),
+
+  FULLRESPONSE: () => request({
+    method: 'PUT',
+    uri: 'URI',
+    resolveWithFullResponse: true
+  })
+  .then(function (body) {
+    // POST succeeded...
+  })
+  .catch(function (err) {
+    // POST failed...
+  }),
 };
 
 export default WebAPIUtil;
