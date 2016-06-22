@@ -1,22 +1,38 @@
-import fetch from 'isomorphic-fetch';
-
+var request = require('request-promise');
 
 const WebAPIUtil = {
 
-  POST: () => fetch(`${url}`, {
-    method: 'post',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
+  GET: () => request({
+    uri: 'GET-URI',
+    qs: {
+      param: 'value' // -> uri + '?param=value'
     },
-    body: JSON.stringify(data)
-  }),
-
-  GET: (token) => fetch(`${url}`, {
-    method: 'get',
+    headers: {
+      'User-Agent': 'Request-Promise'
+    },
+    json: true // Automatically parses the JSON string in the response
   })
-  .then(res => res.json()),
+  .then((res) => {
+    return res;
+  })
+  .catch((err) => {
+    // POST failed...
+  });
 
+  POST: () => request({
+    method: 'POST',
+    uri: "POST-URI",
+    body: {
+      some: 'payload'
+    },
+    json: true // Automatically stringifies the body to JSON
+  })
+  .then((res) => {
+    return res;
+  })
+  .catch((err) => {
+    // POST failed...
+  })
 };
 
 export default WebAPIUtil;
