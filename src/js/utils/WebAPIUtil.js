@@ -1,8 +1,8 @@
-import rp from 'request-promise';
+import fetch from 'isomorphic-fetch';
 
 const WebAPIUtil = {
 
-  GET: () => rp({
+  GET: () => fetch({
     uri: 'GET-URI',
     qs: {
       param: 'value' // -> uri + '?param=value'
@@ -19,7 +19,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  POST: () => rp({
+  POST: () => fetch({
     method: 'POST',
     uri: "POST-URI",
     body: {
@@ -34,7 +34,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  FORM: () => rp({
+  FORM: () => fetch({
     method: 'POST',
     uri: 'POST-URI',
     form: {
@@ -51,7 +51,7 @@ const WebAPIUtil = {
     // POST failed...
   }),
 
-  FULLRESPONSE: () => rp({
+  FULLRESPONSE: () => fetch({
     method: 'PUT',
     uri: 'URI',
     resolveWithFullResponse: true

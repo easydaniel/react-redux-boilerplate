@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Router, Route, Link, browserHistory } from 'react-router'
 
-import classNames from 'classnames';
 import * as BaseActions from '../actions/base';
 
 class Master extends Component {
