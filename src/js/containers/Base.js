@@ -11,10 +11,10 @@ class Master extends Component {
   }
 
   render() {
-    console.log(this);
     return (
       <div>
         Hello something elsesdfsdfasdfasdfasd ~~
+        <img src={require('../../assets/images/test.png')} />
         <Link to={`/test`}>not found</Link>
       </div>
     );

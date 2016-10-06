@@ -45,7 +45,7 @@ module.exports = {
                 loader: "url-loader?limit=8192"
             },
             {
-                test: /\.(html|png)$/,
+                test: /\.(html)$/,
                 loader: "file?name=[path][name].[ext]&context=./src"
             }
         ]
