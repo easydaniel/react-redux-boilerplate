@@ -7,8 +7,6 @@
     "classnames": "^2.2.5",
     "flexboxgrid": "^6.3.1",
     "history": "^4.3.0",
-    "material-ui": "^0.16.4",
-    "material-ui-chip-input": "^0.11.2",
     "query-string": "^4.2.3",
     "react": "^15.3.2",
     "react-bootstrap-table": "^2.6.0",
@@ -74,12 +72,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allenwhale/react-redux-boilerplate.git"
+    "url": "git+https://github.com/tachien/react-redux-boilerplate.git"
   },
-  "author": "allenwhale",
+  "author": "tachien",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/allenwhale/react-redux-boilerplate/issues"
+    "url": "git+https://github.com/tachien/react-redux-boilerplate.git"
   },
-  "homepage": "https://github.com/allenwhale/react-redux-boilerplate#readme"
+  "homepage": "https://github.com/tachien/react-redux-boilerplate#readme"
 }
