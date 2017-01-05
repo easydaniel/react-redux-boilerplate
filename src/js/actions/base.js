@@ -1,4 +1,3 @@
-import { createAction } from 'redux-actions';
-import WebAPIUtil from '../utils/WebAPIUtil.js';
+import { createAction } from 'redux-actions'
 
-export const action = createAction('ACTION');
+export const action = createAction('ACTION')
